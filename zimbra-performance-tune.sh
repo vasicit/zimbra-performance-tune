@@ -13,3 +13,6 @@ zmprov ms `zmhostname` zimbraMessageCacheSize 2000
 zmlocalconfig -e zmconfigd_interval=3600
 zmprov mcf zimbraLogRawLifetime 7d
 zmprov mcf zimbraLogSummaryLifetime 30d
+zmprov mcf zimbraInvalidLoginFilterDelayInMinBetwnReqBeforeReinstating 25
+zmprov mcf zimbraInvalidLoginFilterMaxFailedLogin 3
+zmmailboxdctl restart
